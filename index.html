@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>My cool app</title>
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+
+      <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+      <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+
+      <script>
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            var firebaseConfig = {
+                  apiKey: "AIzaSyAj8m9qytqAiLWFjO6xQkSG5uCB6spSSgQ",
+                  authDomain: "cool-app-906ad.firebaseapp.com",
+                  projectId: "cool-app-906ad",
+                  storageBucket: "cool-app-906ad.appspot.com",
+                  messagingSenderId: "139738843510",
+                  appId: "1:139738843510:web:e03d6c52b625d173fcd257",
+                  measurementId: "G-F51V90LJC0"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+      </script>
+</head>
+
+<body>
+      <h2>My awesome</h2>
+      <section class="log-in">
+            <input id="email" type="text" placeholder="Ingresa correo">
+            <input id="password" type="text" placeholder="Ingresa contraseña">
+            <button onclick=register()>Ingresar</button>
+      </section>
+      <script src="app.js"></script>
+</body>
+
+</html>
